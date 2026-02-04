@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About this Flask web application">
+    <title>About | Azure Flask App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-icon">🚀</span>
+                <span>Azure Flask App</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about" class="active">About</a></li>
+            </ul>
+        </nav>
+
+        <main class="about-page">
+            <div class="about-header">
+                <h1 class="page-title">About This <span class="gradient-text">Project</span></h1>
+                <p class="page-subtitle">Developer Intern Assignment - Azure App Service Deployment</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-card">
+                    <h2>🎯 Objective</h2>
+                    <p>
+                        This project demonstrates the ability to build a Python web application
+                        and deploy it to Azure App Service, creating a fully functional web page
+                        accessible from the internet.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <h2>🛠️ Technologies Used</h2>
+                    <div class="tech-stack">
+                        <div class="tech-item">
+                            <span class="tech-icon">🐍</span>
+                            <span>Python 3.10+</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">⚡</span>
+                            <span>Flask Framework</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">📝</span>
+                            <span>Jinja2 Templates</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">🦄</span>
+                            <span>Gunicorn</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">☁️</span>
+                            <span>Azure App Service</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">🔄</span>
+                            <span>GitHub Actions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-card">
+                    <h2>📋 Features</h2>
+                    <ul class="feature-list">
+                        <li>✅ Homepage with name input form</li>
+                        <li>✅ Personalized greeting route with query parameters</li>
+                        <li>✅ Responsive HTML templates using Jinja2</li>
+                        <li>✅ Modern CSS styling with animations</li>
+                        <li>✅ Azure App Service deployment ready</li>
+                    </ul>
+                </div>
+
+                <div class="about-card">
+                    <h2>🔗 Routes</h2>
+                    <div class="tech-stack">
+                        <div class="tech-item">
+                            <span class="tech-icon">🏠</span>
+                            <span><code>/</code> - Homepage</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">👋</span>
+                            <span><code>/hello?name=</code> - Greeting</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">ℹ️</span>
+                            <span><code>/about</code> - This page</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-card">
+                    <h2>🚀 Deployment</h2>
+                    <p>
+                        This application is deployed on Azure App Service with Linux as the OS
+                        and Python 3.10+ as the runtime. It uses Gunicorn as the production WSGI server.
+                    </p>
+                </div>
+            </div>
+
+            <div class="hero-buttons" style="justify-content: center; margin-top: 2rem;">
+                <a href="/" class="btn btn-primary">
+                    <span>Back to Home</span>
+                </a>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Built with ❤️ using Flask & Deployed on Azure App Service</p>
+            <p class="footer-sub">Intern Assignment Project 2026</p>
+        </footer>
+    </div>
+</body>
+
+</html>

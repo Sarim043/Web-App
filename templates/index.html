@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Python Flask Web Application deployed on Azure App Service">
+    <title>Welcome | Azure Flask App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-icon">🚀</span>
+                <span>Azure Flask App</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
+
+        <main class="hero">
+            <div class="greeting-card">
+                <div class="greeting-emoji">👋</div>
+                <h1 class="hero-title">
+                    Welcome to <span class="gradient-text">Azure Flask App</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Enter your name below to receive a personalized greeting!
+                </p>
+
+                <form action="/hello" method="get" class="name-form">
+                    <input type="text" name="name" placeholder="What's your name?" class="input-field" required>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Say Hello</span>
+                        <span class="btn-icon">→</span>
+                    </button>
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p class="footer-sub">Intern Assignment Project 2026</p>
+        </footer>
+    </div>
+</body>
+
+</html>

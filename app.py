@@ -1,4 +1,10 @@
+"""
+Flask Web Application for Azure App Service Deployment
+A simple web application demonstrating Flask basics with templates.
+"""
+
 from flask import Flask, render_template, request
+
 app = Flask(__name__)
 
 
